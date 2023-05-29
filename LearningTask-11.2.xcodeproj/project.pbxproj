@@ -18,6 +18,11 @@
 		58AF0FF7291427B600BEA39D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58AF0FF6291427B600BEA39D /* Assets.xcassets */; };
 		58AF0FFA291427B600BEA39D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58AF0FF8291427B600BEA39D /* LaunchScreen.storyboard */; };
 		58F50FCA291C06F400C793DD /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F50FC9291C06F400C793DD /* Starship.swift */; };
+		D95717F82947ADFC009E6A23 /* MoviesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95717F72947ADFC009E6A23 /* MoviesAPI.swift */; };
+		D95717FA2947AEAF009E6A23 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95717F92947AEAF009E6A23 /* Movies.swift */; };
+		D9F6ABD429480A8900598F1C /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6ABD329480A8900598F1C /* MovieTableViewCell.swift */; };
+		D9F6ABD729481F4900598F1C /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6ABD629481F4900598F1C /* MovieDetailsViewController.swift */; };
+		D9F6ABDC29481FB600598F1C /* StarshipsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6ABDB29481FB600598F1C /* StarshipsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		58AF0FF9291427B600BEA39D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58AF0FFB291427B600BEA39D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58F50FC9291C06F400C793DD /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
+		D95717F72947ADFC009E6A23 /* MoviesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesAPI.swift; sourceTree = "<group>"; };
+		D95717F92947AEAF009E6A23 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		D9F6ABD329480A8900598F1C /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		D9F6ABD629481F4900598F1C /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		D9F6ABDB29481FB600598F1C /* StarshipsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				58AF10042914780B00BEA39D /* Movies */,
+				D9F6ABD529481F1800598F1C /* MovieDetails */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -126,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				58AF0FF1291427B300BEA39D /* MoviesViewController.swift */,
+				D9F6ABD229480A6900598F1C /* View */,
 			);
 			path = Movies;
 			sourceTree = "<group>";
@@ -134,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				58F50FC9291C06F400C793DD /* Starship.swift */,
+				D95717F92947AEAF009E6A23 /* Movies.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -142,8 +155,34 @@
 			isa = PBXGroup;
 			children = (
 				5854331C2915725E00364D37 /* StarshipsAPI.swift */,
+				D95717F72947ADFC009E6A23 /* MoviesAPI.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		D9F6ABD229480A6900598F1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D9F6ABD329480A8900598F1C /* MovieTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D9F6ABD529481F1800598F1C /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+				D9F6ABD629481F4900598F1C /* MovieDetailsViewController.swift */,
+				D9F6ABD829481F4E00598F1C /* View */,
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		D9F6ABD829481F4E00598F1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D9F6ABDB29481FB600598F1C /* StarshipsTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,13 +256,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95717FA2947AEAF009E6A23 /* Movies.swift in Sources */,
 				5854331D2915725E00364D37 /* StarshipsAPI.swift in Sources */,
 				58AF0FF2291427B300BEA39D /* MoviesViewController.swift in Sources */,
 				582DC61B291BCEE00072B4C1 /* SimpleAlert+UIAlertController.swift in Sources */,
 				58F50FCA291C06F400C793DD /* Starship.swift in Sources */,
+				D9F6ABDC29481FB600598F1C /* StarshipsTableViewCell.swift in Sources */,
 				58AF0FEE291427B300BEA39D /* AppDelegate.swift in Sources */,
+				D95717F82947ADFC009E6A23 /* MoviesAPI.swift in Sources */,
 				5854332629193F0200364D37 /* DecodingFormattedDates+JSONDecoder.swift in Sources */,
+				D9F6ABD729481F4900598F1C /* MovieDetailsViewController.swift in Sources */,
 				5854332429193EBC00364D37 /* CustomPatterns+DateFormatter.swift in Sources */,
+				D9F6ABD429480A8900598F1C /* MovieTableViewCell.swift in Sources */,
 				58AF0FF0291427B300BEA39D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

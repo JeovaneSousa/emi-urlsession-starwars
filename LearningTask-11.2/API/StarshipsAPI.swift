@@ -99,6 +99,7 @@ extension StarshipsAPI {
             
             case .invalidData:
                 return "Os dados recebidos do servidor são inválidos"
+                
             case .starshipsNotLoaded:
                 return "Algumas naves podem não ter sido carregadas"
             }
